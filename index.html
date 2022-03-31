@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Portfolio - Luan Peixoto Jardim</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/3286079.png">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+
+    <meta name="description" content="Jogue esse jogo da memória com até 4 pessoas, nas 
+    modalidades 4x4 e 6x6. Feito puramente em html/css/javascript por Luan Peixoto Jardim.">
+    <!-- esse meta é a descrição do site que vai aparecer em baixo do titulo nas pesquisas
+    do google (máximo +- 160 caracteres)-->
+
+    <meta name="robots" content="index, follow">
+    <!-- 
+    serve para mostrar que você quer que essa página apareça na pesquisa do google 
+    index significa que o bot vai colocar a página atual no search engine,
+    follow significa que ele vai seguir todos os links na página para tentar index, caso
+    dentro do link esteja 'index'
+
+    exemplo de index,follow:
+        qualquer pagina que possa exibir todo o conteúdo nas pesquisas
+    exemplo de noindex,nofollow:
+        num e-commerce, uma pagina de confirmação de compras, ou qualquer página que mostre
+        os dados de um usuário numa sessão atual, não é legal colocar uma página do tipo no
+        search engine, pois para cada usuário haverá dados diferentes
+    exemplo de noindex,follow:
+        quando você não quer que aquela pagina especifica apareça na search engine, mas acha
+        interessante que os links nela sejam visitados pelo bot
+    exemplo de index,nofollow:
+        quando você quer que apenas a pagina inicial do seu site apareça na search engine por 
+        exemplo, um site que comece numa página de login (facebook), é interessante que a página
+        apareça no search engine, porém não é interessante mostrar o resto, pois contém dados
+        pessoas que só aparecem para cada usuário específico.    
+    -->
+
+    <!-- metas para rede sociais (insta,google,yt,facebook,zap) -->
+
+    <meta property="og:type" content="article" />
+    <!-- tipo do url, pode ser 
+        Atividades activity sport 
+        Negócios bar company cafe hotel restaurant 
+        Grupos cause sports_league sports_team
+        Organizações band government non_profit school university
+        Pessoas actor athlete author director musician politician public_figure
+        Locais city country landmark state_province
+        Produtos e entretenimento album book drink food game product song movie tv_show
+        Websites blog website article
+    -->
+
+    <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+    <!-- título que vai aparecer no cartão do url -->
+
+    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+    <!-- descrição que vai aparecer no card -->
+
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+    <!-- img que vai aparecer no card -->
+
+    <meta property="og:url" content="PERMALINK" />
+    <!-- link, não é mt necessário, a não ser que existam duas páginas com o mesmo link, aí muda o link -->
+
+    <meta property="og:site_name" content="SITE NAME" />
+    <!-- mostra o nome do site, não é necessário também -->
+
+    <!-- twitter -->
+
+    <meta name="twitter:title" content="">
+    <!-- titulo do card JOGO DA MEMORIA Muito FODA CLIque AQUI-->
+
+    <meta name="twitter:card" content="TITLE OF POST OR PAGE">
+    <!-- mesma coisa que type, do acima, mas só pode ser photo (para imagens)
+        player (para vídeos) e Summary (para todo o resto) -->
+
+    <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT">
+    <!-- descrição do card -->
+
+    <meta name="twitter:image" content="LINK TO IMAGE">
+    <!-- link para a imagem do card (tem que ser url)
+        é necessário validar o link clicando aqui https://cards-dev.twitter.com/validator-->
+
+    <meta name="twitter:site" content="@USERNAME">
+    <!-- @user do site, caso  exista uma conta para o site no tt-->
+
+    <meta name="twitter:creator" content="@USERNAME">
+    <!-- @user do criador do site, caso ele tenha uma conta no tt-->
+
+</head>
+
+<body>
+
+    <!--seletor de-->
+    <div class="container-pais mover-container-btn-pais pt-1">
+        <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px" src="../images/usa_flag.png"></button>
+        <button class="btn-pais" onclick="mudarLinguagem('pt')"><img class="mb-1 flag-img" width="20px" src="../images/brazil_flag.png"></button>
+        <button class="btn-pais" onclick="toggleBotaoLinguagem()"><i class="fa-solid fa-chevron-right rotate"></i></button>
+        
+    </div>
+
+    <div class="anti-click-pais"></div>
+
+    <!--navbar principal, vai aparecer em ambos dispositivos-->
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" style="background-color: white; ">
+
+        <div class="container">
+
+            <!--logo-->
+            <a class="navbar-brand" href="/index.html">
+                <img src="images/logo.svg" alt="logo.svg">
+            </a>
+
+            <!--menus que vão ser colapsados dentro do botão de collapse-->
+            <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu" style="background-color: white;">
+
+
+                <!--botão fechar menu-->
+                <div class="d-inline-block d-sm-none pt-3 float-end">
+                    <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-label="Close"></button>
+                </div>
+
+
+
+                <ul class="navbar-nav mx-auto mt-4 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link m-0 p-1" href="/index.html">
+                            início
+                        </a>
+                    </li>
+                    <hr class="mt-1 mb-1" />
+                    <li class="nav-item">
+                        <a class="nav-link m-0 p-1" href="/pages/portfolio.html">
+                            portfolio
+                        </a>
+                    </li>
+                    <hr class="mt-1 mb-1" />
+                    <li class="nav-item">
+                        <a class="nav-link m-0 p-1" href="/pages/contato.html">
+                            contato
+                        </a>
+                    </li>
+                    <hr class="mt-1 mb-1" />
+                </ul>
+                
+            </div>
+
+            <div class="ms-auto me-3 me-md-0 d-inline-block">
+                <a class="sociais" href="https://www.linkedin.com/in/luan-peixoto-jardim-4989b3205/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a class="sociais" href="mailto:luan_peixoto@id.uff.br"><i class="fa-solid fa-square-envelope fa-xl"></i></a>
+            </div>
+
+            <!--botão de collapse(hamburguer, mobile)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

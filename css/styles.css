@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+a, a:hover {
+  color: inherit;
+}
+
+/* remove a cor azul das anchor tag */
+
+a:hover {
+  color: inherit;
+}
+
+/* fonte da pagina */
+html, body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* fonte do titulo */
+
+.titulo {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* navbar na esquerda */
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    transition: all 0.4s ease;
+    display: block;
+    height: 100vh !important;
+  }
+
+  .navbar-collapse.collapsing {
+    margin-right: 75%;
+    right: 25%;
+    transition: all 0.2s ease;
+  }
+
+  .navbar-collapse.show {
+    right: 50%;
+  }
+
+  .navbar-collapse-shadow {
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* active */
+
+.active {
+  color:#ffb833 !important;
+}
+
+/* cor dos botões */
+
+.nav-link {
+  color:#474747 !important;
+}
+
+
+.nav-link:hover {
+  transition: 0.3s;
+  color:#ffb833 !important;
+}
+
+.sociais:hover {
+  transition: 0.5s;
+  color: #ffb833;
+}
+
+/* container de botoes de pais */
+
+.abrir-btn-pais {
+  position: fixed;
+  z-index: 10555;
+  background-color: #474747;
+  color: black;
+}
+
+.container-pais {
+  left: 12px;
+  bottom: 12px;
+  position: fixed;
+  border: 1px solid rgb(192, 192, 192);
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: 0.3s;
+}
+
+.btn-pais {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+
+.mover-container-btn-pais {
+  left: -40px;
+}
+
+.flag-img:active {
+  filter: brightness(0.8);
+}
+
+.anti-click-pais {
+  height: 32px;
+  width: 12px;
+  left: 0px;
+  bottom: 12px;
+  position: fixed;
+}
+
+/* rodar icon */
+
+.rotate{
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.rotate-180 {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* efeito fade-in */
+
+.fade-in {
+  -webkit-animation: fade-in 0.3s linear forwards;
+  animation: fade-in 0.6s linear forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  50% {
+      opacity: 0.5;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.6s linear forwards;
+  animation: fade-out 0.6s linear forwards;
+  opacity: 1;
+}
+
+@keyframes fade-out {
+  50% {
+      opacity: 0.5;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
