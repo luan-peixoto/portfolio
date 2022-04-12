@@ -7,7 +7,6 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="/images/3286079.png">
 
@@ -15,84 +14,24 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/all.css" rel="stylesheet">
 
-    <meta name="description" content="Jogue esse jogo da memória com até 4 pessoas, nas 
-    modalidades 4x4 e 6x6. Feito puramente em html/css/javascript por Luan Peixoto Jardim.">
-    <!-- esse meta é a descrição do site que vai aparecer em baixo do titulo nas pesquisas
-    do google (máximo +- 160 caracteres)-->
+    <meta name="description" content="Site portfolio para exibir meus projetos de website.">
 
     <meta name="robots" content="index, follow">
-    <!-- 
-    serve para mostrar que você quer que essa página apareça na pesquisa do google 
-    index significa que o bot vai colocar a página atual no search engine,
-    follow significa que ele vai seguir todos os links na página para tentar index, caso
-    dentro do link esteja 'index'
 
-    exemplo de index,follow:
-        qualquer pagina que possa exibir todo o conteúdo nas pesquisas
-    exemplo de noindex,nofollow:
-        num e-commerce, uma pagina de confirmação de compras, ou qualquer página que mostre
-        os dados de um usuário numa sessão atual, não é legal colocar uma página do tipo no
-        search engine, pois para cada usuário haverá dados diferentes
-    exemplo de noindex,follow:
-        quando você não quer que aquela pagina especifica apareça na search engine, mas acha
-        interessante que os links nela sejam visitados pelo bot
-    exemplo de index,nofollow:
-        quando você quer que apenas a pagina inicial do seu site apareça na search engine por 
-        exemplo, um site que comece numa página de login (facebook), é interessante que a página
-        apareça no search engine, porém não é interessante mostrar o resto, pois contém dados
-        pessoas que só aparecem para cada usuário específico.    
-    -->
+    <meta property="og:type" content="website" />
 
-    <!-- metas para rede sociais (insta,google,yt,facebook,zap) -->
+    <meta property="og:title" content="Luan Peixoto Jardim - Portfolio" />
 
-    <meta property="og:type" content="article" />
-    <!-- tipo do url, pode ser 
-        Atividades activity sport 
-        Negócios bar company cafe hotel restaurant 
-        Grupos cause sports_league sports_team
-        Organizações band government non_profit school university
-        Pessoas actor athlete author director musician politician public_figure
-        Locais city country landmark state_province
-        Produtos e entretenimento album book drink food game product song movie tv_show
-        Websites blog website article
-    -->
+    <meta property="og:description" content="Website contendo meus mais recentes trabalhos para divulgação." />
 
-    <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
-    <!-- título que vai aparecer no cartão do url -->
+    <meta property="og:image" content="https://i.imgur.com/L9c38vD.png" />
 
-    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
-    <!-- descrição que vai aparecer no card -->
+    <meta name="twitter:title" content="Luan Peixoto Jardim - Portfolio">
 
-    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
-    <!-- img que vai aparecer no card -->
 
-    <meta property="og:url" content="PERMALINK" />
-    <!-- link, não é mt necessário, a não ser que existam duas páginas com o mesmo link, aí muda o link -->
+    <meta name="twitter:description" content="Website contendo meus mais recentes trabalhos para divulgação.">
 
-    <meta property="og:site_name" content="SITE NAME" />
-    <!-- mostra o nome do site, não é necessário também -->
-
-    <!-- twitter -->
-
-    <meta name="twitter:title" content="">
-    <!-- titulo do card JOGO DA MEMORIA Muito FODA CLIque AQUI-->
-
-    <meta name="twitter:card" content="TITLE OF POST OR PAGE">
-    <!-- mesma coisa que type, do acima, mas só pode ser photo (para imagens)
-        player (para vídeos) e Summary (para todo o resto) -->
-
-    <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT">
-    <!-- descrição do card -->
-
-    <meta name="twitter:image" content="LINK TO IMAGE">
-    <!-- link para a imagem do card (tem que ser url)
-        é necessário validar o link clicando aqui https://cards-dev.twitter.com/validator-->
-
-    <meta name="twitter:site" content="@USERNAME">
-    <!-- @user do site, caso  exista uma conta para o site no tt-->
-
-    <meta name="twitter:creator" content="@USERNAME">
-    <!-- @user do criador do site, caso ele tenha uma conta no tt-->
+    <meta name="twitter:image" content="https://i.imgur.com/L9c38vD.png">
 
 </head>
 
@@ -100,26 +39,29 @@
 
     <!--seletor de-->
     <div class="container-pais mover-container-btn-pais pt-1">
-        <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px" src="../images/usa_flag.png"></button>
-        <button class="btn-pais" onclick="mudarLinguagem('pt')"><img class="mb-1 flag-img" width="20px" src="../images/brazil_flag.png"></button>
-        <button class="btn-pais" onclick="toggleBotaoLinguagem()"><i class="fa-solid fa-chevron-right rotate"></i></button>
-        
+        <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px"
+                src="../images/usa_flag.png"></button>
+        <button class="btn-pais" onclick="mudarLinguagem('pt')"><img class="mb-1 flag-img" width="20px"
+                src="../images/brazil_flag.png"></button>
+        <button class="btn-pais" onclick="toggleBotaoLinguagem()"><i
+                class="fa-solid fa-chevron-right rotate"></i></button>
+
     </div>
 
     <div class="anti-click-pais"></div>
 
     <!--navbar principal, vai aparecer em ambos dispositivos-->
-    <nav class="navbar navbar-light navbar-expand-md sticky-top" style="background-color: white; ">
+    <nav style="background-color: white; border-bottom: 1px solid rgb(187, 187, 187);" class="navbar navbar-light navbar-expand-md sticky-top">
 
         <div class="container">
 
             <!--logo-->
             <a class="navbar-brand" href="/index.html">
-                <img src="images/logo.svg" alt="logo.svg">
+                <div class="titulo luan-brand pt-1">&lt;<span id="brand">LP</span>/&gt;</div>
             </a>
 
             <!--menus que vão ser colapsados dentro do botão de collapse-->
-            <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu" style="background-color: white;">
+            <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu">
 
 
                 <!--botão fechar menu-->
@@ -137,8 +79,8 @@
                         </a>
                     </li>
                     <hr class="mt-1 mb-1" />
-                    <li class="nav-item">
-                        <a class="nav-link m-0 p-1" href="/pages/portfolio.html">
+                    <li class="nav-item border-active">
+                        <a class="active nav-link m-0 p-1" href="/pages/portfolio.html">
                             portfolio
                         </a>
                     </li>
@@ -150,12 +92,16 @@
                     </li>
                     <hr class="mt-1 mb-1" />
                 </ul>
-                
+
             </div>
 
             <div class="ms-auto me-3 me-md-0 d-inline-block">
-                <a class="sociais" href="https://www.linkedin.com/in/luan-peixoto-jardim-4989b3205/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                <a class="sociais" href="mailto:luan_peixoto@id.uff.br"><i class="fa-solid fa-square-envelope fa-xl"></i></a>
+                <a class="sociais" href="https://www.linkedin.com/in/luan-peixoto-jardim-4989b3205/"><i
+                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a class="sociais" href="https://github.com/luan-peixoto/"><i
+                        class="fa-brands fa-github-square fa-xl"></i></a>
+                <a class="sociais" href="mailto:luan_peixoto@id.uff.br"><i
+                        class="fa-solid fa-square-envelope fa-xl"></i></a>
             </div>
 
             <!--botão de collapse(hamburguer, mobile)-->
@@ -163,91 +109,104 @@
                 aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
         </div>
     </nav>
 
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-6 text-center">
-                <p id="titulo" class="titulo fade-in" style="font-size: 6em;">todos</p>
-            </div>
-            <div class="col-6 my-auto">
-                <ul class="nav fade-in">
-                    <li class="nav-item">
-                      <a onclick="mudarPortfolio('todos')" class="nav-link">todos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a onclick="mudarPortfolio('html/css/js')" class="nav-link">html / css / js</a>
-                    </li>
-                    <li class="nav-item">
-                      <a onclick="mudarPortfolio('react.js')" class="nav-link">react.js</a>
-                    </li>
-                    <li class="nav-item">
-                      <a onclick="mudarPortfolio('django')" class="nav-link">django</a>
-                    </li>
-                  </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row p-2">
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    1
+    <div class="main">
+        <div class="container pt-4 mb-2">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <p id="titulo" class="titulo fade-in">todos</p>
                 </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    2
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    3
+                <div class="col-12 col-md-6 my-auto">
+                    <ul class="nav fade-in justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a onclick="mudarPortfolio('todos')" class="nav-link">todos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="mudarPortfolio('html/css/js')" class="nav-link">html / css / js</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="mudarPortfolio('react.js')" class="nav-link">react.js</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="mudarPortfolio('django')" class="nav-link">django</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <div class="row p-2">
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    1
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    2
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    3
-                </div>
-            </div>
-        </div>
-
-        <div class="row p-2">
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    1
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    2
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="background-color: bisque; padding: 2px;">
-                    3
-                </div>
-            </div>
-        </div>
-    </div>
-
     
+        <div class="container mb-5">
+            <div id="card-container" class="card-container row fade-in">
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/sneakers.html">
+                            <img class="card-img border-img" src="../images/sneakers.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/editor-html.html">
+                            <img class="card-img border-img" src="../images/editor-html.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/jogo-memoria.html">
+                            <img class="card-img border-img" src="../images/jogo-memoria.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/tips-pro.html">
+                            <img class="card-img border-img" src="../images/tips-pro.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/catalogo.html">
+                            <img class="card-img border-img" src="../images/catalogo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/rede-market.html">
+                            <img class="card-img border-img" src="../images/rede-market.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-0">
+                    <div class="card-bg m-2 p-2">
+                        <a href="/pages/sites/cadastro.html">
+                            <img class="card-img border-img" src="../images/cadastro.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer do site-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="text-muted">© 2022 Luan Peixoto Jardim.</span>
+            </div>
+        </footer>
+    </div>
+
+
 
 
     <script src="../js/jquery-3.6.0.js"></script>

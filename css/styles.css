@@ -1,6 +1,17 @@
+/* 
+CORES:
+laranja: #ffb833 | laranja light: #ffdd9f | laranja dark: #e29300
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+/* conteudo do site excluindo footer e header (143px = tamanho dos dois) */
+.main {
+  min-height: calc(100vh - 186px);
+}
 
 a, a:hover {
   color: inherit;
@@ -21,6 +32,23 @@ html, body {
 
 .titulo {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 4.8em;
+}
+
+
+@media (min-width: 410px) and (max-width: 575px) {
+  .card-bg {
+    margin-left: 48px !important;
+    margin-right: 48px !important;
+    margin-bottom: 48px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5em;
+  }
 }
 
 /* navbar na esquerda */
@@ -54,18 +82,11 @@ html, body {
   }
 }
 
-/* active */
-
-.active {
-  color:#ffb833 !important;
-}
-
 /* cor dos botões */
 
 .nav-link {
   color:#474747 !important;
 }
-
 
 .nav-link:hover {
   transition: 0.3s;
@@ -75,6 +96,24 @@ html, body {
 .sociais:hover {
   transition: 0.5s;
   color: #ffb833;
+}
+
+/* active */
+
+.active {
+  color: #e29300 !important;
+}
+
+@media (min-width: 768px) {
+  @media (hover: hover) and (pointer: fine) {
+    .nav-item:hover {
+      border-bottom: 1px solid #e29300;
+    }
+  }
+
+  .border-active {
+    border-bottom: 1px solid #e29300;
+  }
 }
 
 /* container de botoes de pais */
@@ -87,6 +126,7 @@ html, body {
 }
 
 .container-pais {
+  z-index: 15555;
   left: 12px;
   bottom: 12px;
   position: fixed;
@@ -95,6 +135,7 @@ html, body {
   padding-left: 3px;
   padding-right: 3px;
   transition: 0.3s;
+  background-color: white;
 }
 
 .btn-pais {
@@ -166,4 +207,49 @@ html, body {
   100% {
       opacity: 0;
   }
+}
+
+/* cards dos sites */
+
+
+.card-bg {
+  background-color: rgb(231, 231, 231); 
+  border: 1px solid rgb(187, 187, 187);
+  -moz-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-bg:hover {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #ffdd9f;
+    border: 1px solid #ffb833;
+  }
+}
+
+.card-bg:active {
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  filter: brightness(0.8);
+  -moz-transition: 0s;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.luan-brand {
+  width: 120px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8em;
 }
