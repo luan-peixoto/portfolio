@@ -40,7 +40,6 @@ html, body {
   .card-bg {
     margin-left: 48px !important;
     margin-right: 48px !important;
-    margin-bottom: 48px !important;
   }
 }
 
@@ -106,7 +105,7 @@ html, body {
 
 @media (min-width: 768px) {
   @media (hover: hover) and (pointer: fine) {
-    .nav-item:hover {
+    .nav-item-border:hover {
       border-bottom: 1px solid #e29300;
     }
   }
@@ -252,4 +251,8 @@ html, body {
   font-weight: bold;
   text-align: center;
   font-size: 0.8em;
+}
+
+.lightbox-container {
+  border: 1px solid rgb(20, 20, 20);
 }
