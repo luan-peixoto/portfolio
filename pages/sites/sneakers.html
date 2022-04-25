@@ -37,7 +37,7 @@
 
 <body>
 
-    <!--seletor de-->
+    <!--seletor de linguagem-->
     <div class="container-pais mover-container-btn-pais pt-1">
         <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px"
                 src="../../images/usa_flag.png"></button>
@@ -127,28 +127,25 @@
                 </div>
                 <div class="col-12 mt-5">
                     <div class="lightbox-container p-3">
-                        <img class="d-inline-block" src="../../images/sneakers.png" width="100%">
+                        <img id="img-0" class="d-inline-block" src="../../images/sneakers.png" width="100%">
+                        <img id="img-1" class="d-none" src="../../images/catalogo.png" width="100%">
+                        <img id="img-2" class="d-none" src="../../images/portfolio.png" width="100%">
+                        <img id="img-3" class="d-none" src="../../images/tips-pro.png" width="100%">
                     </div>
                 </div>
-                <div class="col 12">
-                    <div class="row justify-content-center mt-2">
-                        <div class="col-2 text-center my-auto">
-                            AAA
+                <div class="col-12">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-1 p-0 text-center my-auto">
+                            <button class="btn-lightbox prev p-1 p-sm-2 pt-md-3 pb-md-3" type="button" onclick="andarImagem(-1)">&#10094;</button>
                         </div>
-                        <div class="col-2">
-                            <img class="d-inline-block" src="../../images/sneakers.png" width="100%">
+                        <div class="col-8 p-0 text-center">
+                            <img id="thumb-0" class="d-inline-block thumbnail-img active-thumb" onclick="trocarImagem(0)" src="../../images/sneakers.png" width="22%">
+                            <img id="thumb-1" class="d-inline-block thumbnail-img" onclick="trocarImagem(1)" src="../../images/catalogo.png" width="22%">
+                            <img id="thumb-2" class="d-inline-block thumbnail-img" onclick="trocarImagem(2)" src="../../images/sneakers.png" width="22%">
+                            <img id="thumb-3" class="d-inline-block thumbnail-img" onclick="trocarImagem(3)" src="../../images/sneakers.png" width="22%">
                         </div>
-                        <div class="col-2">
-                            <img class="d-inline-block" src="../../images/sneakers.png" width="100%">
-                        </div>
-                        <div class="col-2">
-                            <img class="d-inline-block" src="../../images/sneakers.png" width="100%">
-                        </div>
-                        <div class="col-2">
-                            <img class="d-inline-block" src="../../images/sneakers.png" width="100%">
-                        </div>
-                        <div class="col-2 text-center my-auto">
-                            AAA
+                        <div class="col-1 p-0 text-center my-auto">
+                            <button class="btn-lightbox next p-1 p-sm-2 pt-md-3 pb-md-3" type="button" onclick="andarImagem(1)">&#10095;</button>
                         </div>
                     </div>
                 </div>

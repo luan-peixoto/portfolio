@@ -246,6 +246,8 @@ html, body {
   border-radius: 0px !important;
 }
 
+/* brand da navbar */
+
 .luan-brand {
   width: 120px;
   font-weight: bold;
@@ -253,6 +255,37 @@ html, body {
   font-size: 0.8em;
 }
 
+/* lightbox mobile */
+
 .lightbox-container {
-  border: 1px solid rgb(20, 20, 20);
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-lightbox {
+  background-color: rgb(231, 231, 231); 
+  border: none;
+  padding: 0;
+}
+
+.btn-lightbox:active {
+  color: #e29300;
+  background-color: #ffdd9f;
+  border: none;
+  padding: 0;
+}
+
+.thumbnail-img {
+  border: 1px solid rgb(231, 231, 231);
+}
+
+.active-thumb {
+  border: 1px solid #ffb833;
+}
+
+.prev {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.next {
+  border-radius: 0px 5px 5px 0px;
 }

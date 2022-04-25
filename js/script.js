@@ -20,7 +20,6 @@ $(document).click(function (event) {
 
 function toggleBotaoLinguagem() {
     let container = document.getElementsByClassName('container-pais')[0];
-    console.log(container);
     container.classList.toggle('mover-container-btn-pais');
     
     let btn = document.getElementsByClassName('rotate')[0];
@@ -125,7 +124,6 @@ function aumentarTexto() {
             len_t1 -= 1;
         }
         else {
-            console.log(len_t2)
             texto.innerText = texto_2.substring(0,len_t2 + 1)
             if (++ len_t2 == 12) {
                 clearInterval(interval_1);
@@ -146,7 +144,6 @@ function diminuirTexto() {
             len_t2 -= 1;
         }
         else {
-            console.log(len_t1)
             texto.innerText = texto_1.substring(0,len_t1 + 1)
             if (++ len_t1 == 2) {
                 clearInterval(interval_2);
@@ -157,3 +154,45 @@ function diminuirTexto() {
         
 }
 setTimeout(() => {aumentarTexto()}, 3000);
+
+// TROCAR IMAGENS DA THUMBNAIL MOBILE
+
+var img_atual = 0;
+
+function trocarImagem(n) {
+    let img_0 = document.getElementById("img-" + img_atual);
+    let thumb_0 = document.getElementById("thumb-" + img_atual);
+    img_0.classList.remove("d-inline-block")
+    img_0.classList.add("d-none")
+    thumb_0.classList.remove("active-thumb")
+
+    let img_1 = document.getElementById("img-" + n);
+    let thumb_1 = document.getElementById("thumb-" + n);
+    img_1.classList.add("d-inline-block")
+    img_1.classList.remove("d-none")
+    thumb_1.classList.add("active-thumb")
+    img_atual = n
+}
+
+function andarImagem(n) {
+    let img_0 = document.getElementById("img-" + img_atual);
+    let thumb_0 = document.getElementById("thumb-" + img_atual);
+    img_0.classList.remove("d-inline-block")
+    img_0.classList.add("d-none")
+    thumb_0.classList.remove("active-thumb")
+    
+    let andar = img_atual + n
+    if (andar > 3) {
+        andar = 0;
+    }
+    else if (andar < 0) {
+        andar = 3;
+    }
+    let img_1 = document.getElementById("img-" + andar);
+    let thumb_1 = document.getElementById("thumb-" + andar);
+    img_1.classList.add("d-inline-block")
+    img_1.classList.remove("d-none")
+    thumb_1.classList.add("active-thumb")
+    img_atual = andar
+    
+}
