@@ -1,9 +1,17 @@
 // FUNÇÃO PARA REMOVER NAVBAR MOBILE SE CLICAR FORA DELA:
+        
+document.getElementsByClassName("backdrop")[0].addEventListener("click", function() {
+    $('.navbar-collapse').collapse('hide');
+    $('.backdrop').css("display", "none");
+});
 
-$(document).click(function (event) {
-    if (!$(event.target).is('.navbar-collapse *')) {
-        $('.navbar-collapse').collapse('hide');
-    }
+document.getElementsByClassName("btn-close")[0].addEventListener("click", function() {
+    $('.navbar-collapse').collapse('hide');
+    $('.backdrop').css("display", "none");
+});
+
+document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function() {
+    $('.backdrop').css("display", "block");
 });
 
 // FUNÇÃO PARA FECHAR A DIV DE PAIS SE CLICAR FORA DELA
@@ -196,3 +204,14 @@ function andarImagem(n) {
     img_atual = andar
     
 }
+
+// ANIMAÇÃO DE BRILHO DO BOTÃO
+
+setInterval(function() {
+    document.getElementsByClassName("btn-visitar")[0].classList.add("shiny-animate");
+    document.getElementsByClassName("btn-visitar")[1].classList.add("shiny-animate");
+    setTimeout(function() {
+        document.getElementsByClassName("btn-visitar")[0].classList.remove("shiny-animate");
+        document.getElementsByClassName("btn-visitar")[1].classList.remove("shiny-animate");
+    }, 4000)
+}, 7000)

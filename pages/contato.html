@@ -51,27 +51,30 @@
     <div class="anti-click-pais"></div>
 
     <!--navbar principal, vai aparecer em ambos dispositivos-->
-    <nav style="background-color: white; border-bottom: 1px solid rgb(187, 187, 187);" class="navbar navbar-light navbar-expand-md sticky-top">
+    <nav style="background-color: white; border-bottom: 1px solid rgb(187, 187, 187);"
+        class="navbar navbar-light navbar-expand-md sticky-top">
 
+        
         <div class="container">
 
             <!--logo-->
             <a class="navbar-brand" href="/index.html">
                 <div class="titulo luan-brand pt-1">&lt;<span id="brand">LP</span>/&gt;</div>
             </a>
-
+            
+            <div class="backdrop"></div>
             <!--menus que vão ser colapsados dentro do botão de collapse-->
             <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu">
 
 
                 <!--botão fechar menu-->
-                <div class="d-inline-block d-sm-none pt-3 float-end">
+                <div class="d-inline-block d-md-none pt-3 float-end">
                     <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#menu"
                         aria-label="Close"></button>
                 </div>
 
 
-
+                
                 <ul class="navbar-nav mx-auto mt-4 mt-md-0">
                     <li class="nav-item nav-item-border">
                         <a class="nav-link m-0 p-1" href="/index.html">
@@ -85,8 +88,8 @@
                         </a>
                     </li>
                     <hr class="mt-1 mb-1" />
-                    <li class="nav-item nav-item-border border-active">
-                        <a class="active nav-link m-0 p-1" href="/pages/contato.html">
+                    <li class="nav-item nav-item-border">
+                        <a class="nav-link m-0 p-1" href="/pages/contato.html">
                             contato
                         </a>
                     </li>
@@ -105,9 +108,8 @@
             </div>
 
             <!--botão de collapse(hamburguer, mobile)-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <i class="fa-solid fa-square-plus"></i>
             </button>
         </div>
     </nav>

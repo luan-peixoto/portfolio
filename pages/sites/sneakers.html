@@ -48,31 +48,34 @@
 
     </div>
 
+    
     <div class="anti-click-pais"></div>
 
     <!--navbar principal, vai aparecer em ambos dispositivos-->
     <nav style="background-color: white; border-bottom: 1px solid rgb(187, 187, 187);"
         class="navbar navbar-light navbar-expand-md sticky-top">
 
+        
         <div class="container">
 
             <!--logo-->
             <a class="navbar-brand" href="/index.html">
                 <div class="titulo luan-brand pt-1">&lt;<span id="brand">LP</span>/&gt;</div>
             </a>
-
+            
+            <div class="backdrop"></div>
             <!--menus que vão ser colapsados dentro do botão de collapse-->
             <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu">
 
 
                 <!--botão fechar menu-->
-                <div class="d-inline-block d-sm-none pt-3 float-end">
+                <div class="d-inline-block d-md-none pt-3 float-end">
                     <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#menu"
                         aria-label="Close"></button>
                 </div>
 
 
-
+                
                 <ul class="navbar-nav mx-auto mt-4 mt-md-0">
                     <li class="nav-item nav-item-border">
                         <a class="nav-link m-0 p-1" href="/index.html">
@@ -106,9 +109,8 @@
             </div>
 
             <!--botão de collapse(hamburguer, mobile)-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <i class="fa-solid fa-square-plus"></i>
             </button>
         </div>
     </nav>
@@ -119,11 +121,11 @@
             <!--lightbox mobile-->
             <div class="row d-flex d-lg-none mt-5">
 
-                <div class="col-8 pt-1">
-                    <h3>Página de Venda Sneakers</h3>
+                <div class="col-7 col-sm-8">
+                    <p class="josefin-sans fw-bold" style="font-size: 1.6em">Página de Venda Sneakers</p>
                 </div>
-                <div class="col-4">
-                    <button class="w-100 btn btn-primary">visitar</button>
+                <div class="col-5 col-sm-4 pt-1">
+                    <a target="_blank" href="https://google.com" class="w-100 d-inline-block btn-visitar shiny-animate text-center"><i style="vertical-align: middle" class="fa-solid fa-tv fa-xs"></i><span> visitar</span></a>
                 </div>
                 <div class="col-12 mt-5">
                     <div class="lightbox-container p-3">
@@ -150,8 +152,8 @@
                     </div>
                 </div>
 
-                <div style="min-height: 200px;" class="col-12 mt-5">
-                    <p class="ms-3">sl eorkeo rkeork pakro pekroa kopre kaoprk aoskfdl sl eorkeo rkeork pakro pekroa
+                <div class="description col-12 mt-5 p-3">
+                    <p>sl eorkeo rkeork pakro pekroa kopre kaoprk aoskfdl sl eorkeo rkeork pakro pekroa
                         kopre kaoprk aoskfdl sl eorkeo rkeork pakro pekroa kopre kaoprk aoskfdl sl eorkeo rkeork pakro
                         pekroa kopre kaoprk aoskfdl </p>
                 </div>
@@ -189,7 +191,7 @@
                                         aoskfdl sl eorkeo rkeork pakro pekroa kopre kaoprk aoskfdl </p>
                                 </div>
                                 <div class="offset-7 col-4">
-                                    <button class="w-100 btn btn-primary">visitar</button>
+                                    <a target="_blank" href="https://google.com" class="w-100 d-inline-block btn-visitar shiny-animate text-center"><i style="vertical-align: middle" class="fa-solid fa-tv fa-xs"></i><span> visitar</span></a>
                                 </div>
                             </div>
                         </div>
