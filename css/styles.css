@@ -432,13 +432,22 @@ html, body {
 .btn-lg-box {
   width: 100%;
   background: linear-gradient(to right, #FFF 0%, #FFF 8%, rgb(231, 231, 231) 8%, rgb(231, 231, 231) 100%), linear-gradient(to right, #ffffff 0%, #ffffff 8%, #ffffff 8%, #ffffff 100%);
-  background-size: 100% 50%;
+  background-size: 100%;
   background-position: center top, center bottom;
   background-repeat: no-repeat;
 }
 
 .contact-card {
-  background-color: #ffc29f;
+  border: 1px solid rgb(187, 187, 187);
+  background-color: rgb(238, 238, 238);
   width: 280px;
   height: 160px;
+}
+
+.contact-card:hover {
+  background: linear-gradient(-45deg,  rgb(238, 238, 238) 30%, rgb(245, 245, 245) 40%, rgb(255, 255, 255), rgb(245, 245, 245),  rgb(238, 238, 238) 70%);
+  background-size: 400%;
+  background-position: 100%;
+  animation-name: shiny;
+  animation-duration: 2s;
 }
