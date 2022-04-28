@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/3286079.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/ico.png">
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -39,10 +39,10 @@
 
     <!--seletor de-->
     <div class="container-pais mover-container-btn-pais pt-1">
-        <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px"
-                src="../images/usa_flag.png"></button>
-        <button class="btn-pais" onclick="mudarLinguagem('pt')"><img class="mb-1 flag-img" width="20px"
-                src="../images/brazil_flag.png"></button>
+        <a class="btn-pais" href="/pages/portfolio.html"><img class="mb-1 flag-img" width="20px"
+            src="../../images/brazil_flag.png"></a>
+        <a class="btn-pais" href="/en/pages/portfolio.html"><img class="mb-1 flag-img" width="20px"
+                height="13.5px" src="../../images/usa_flag.png"></a>
         <button class="btn-pais" onclick="toggleBotaoLinguagem()"><i
                 class="fa-solid fa-chevron-right rotate"></i></button>
 
@@ -137,9 +137,11 @@
                     </ul>
                 </div>
             </div>
+            <hr class="ms-5 me-5">
         </div>
     
-        <div class="container mb-5">
+        
+        <div class="container mb-5 main-bg">
             <div id="card-container" class="card-container row fade-in">
                 <div class="col-12 col-md-6 col-lg-4 p-0">
                     <div class="card-bg m-2 p-2">
@@ -195,7 +197,7 @@
     </div>
 
     <!--footer do site-->
-    <div class="container">
+    <div class="container mt-5">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">

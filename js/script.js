@@ -34,10 +34,6 @@ function toggleBotaoLinguagem() {
     btn.classList.toggle('rotate-180');
 };
 
-function mudarLinguagem(lingua) {
-        console.log('asd');
-};
-
 // FUNÇÃO PARA MOSTRAR OS SITES + LISTA
 
 var cards = {

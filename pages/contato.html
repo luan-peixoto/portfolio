@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/3286079.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/ico.png">
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -39,10 +39,10 @@
 
     <!--seletor de-->
     <div class="container-pais mover-container-btn-pais pt-1">
-        <button class="btn-pais" onclick="mudarLinguagem('en')"><img class="mb-1 flag-img" width="20px" height="13.5px"
-                src="../images/usa_flag.png"></button>
-        <button class="btn-pais" onclick="mudarLinguagem('pt')"><img class="mb-1 flag-img" width="20px"
-                src="../images/brazil_flag.png"></button>
+        <a class="btn-pais" href="/pages/contato.html"><img class="mb-1 flag-img" width="20px"
+                src="../../images/brazil_flag.png"></a>
+        <a class="btn-pais" href="/en/pages/contato.html"><img class="mb-1 flag-img" width="20px" height="13.5px"
+                src="../../images/usa_flag.png"></a>
         <button class="btn-pais" onclick="toggleBotaoLinguagem()"><i
                 class="fa-solid fa-chevron-right rotate"></i></button>
 
@@ -54,14 +54,14 @@
     <nav style="background-color: white; border-bottom: 1px solid rgb(187, 187, 187);"
         class="navbar navbar-light navbar-expand-md sticky-top">
 
-        
+
         <div class="container">
 
             <!--logo-->
             <a class="navbar-brand" href="/index.html">
                 <div class="titulo luan-brand pt-1">&lt;<span id="brand">LP</span>/&gt;</div>
             </a>
-            
+
             <div class="backdrop"></div>
             <!--menus que vão ser colapsados dentro do botão de collapse-->
             <div class="collapse navbar-collapse navbar-collapse-shadow" id="menu">
@@ -74,7 +74,7 @@
                 </div>
 
 
-                
+
                 <ul class="navbar-nav mx-auto mt-4 mt-md-0">
                     <li class="nav-item nav-item-border">
                         <a class="nav-link m-0 p-1" href="/index.html">
@@ -115,11 +115,45 @@
     </nav>
 
     <div class="main">
-        
+        <div class="container">
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p style="font-size: 3em" class="titulo">Contate Me!</p>
+                    <p class="ps-5 pe-5">Tem interesse no meu trabalho? Estou disponível para ajudar!
+                        Basta me contatar por alguma das formas abaixo e eu responderei o mais rápido possível.
+                    </p>
+                    <hr class="mx-auto" width="80%">
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-lg-4 text d-flex justify-content-center mt-3 mt-lg-0">
+                    <div class="contact-card text-center p-3">
+                        <i class="fa-solid fa-square-phone-flip fa-4x mb-3"></i><br> +55 24 99936-8039
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text d-flex justify-content-center mt-3 mt-lg-0">
+                    <div class="contact-card text-center p-3">
+                        <a href="https://wa.me/+5524999368039/?text=Olá, tudo bem?"><i
+                                class="fa-brands fa-whatsapp-square fa-4x mb-3"></i></a>
+                        <br> <a href="https://wa.me/+5524999368039/?text=Olá, tudo bem?">Envie-me uma mensagem no
+                            Whatsapp!</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text d-flex justify-content-center mt-3 mt-lg-0">
+                    <div class="contact-card text-center p-3">
+                        <i class="fa-solid fa-square-envelope fa-4x mb-3"></i><br> luan_peixoto@id.uff.br
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <!--footer do site-->
-    <div class="container">
+    <div class="container mt-5">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
