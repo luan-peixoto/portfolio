@@ -4,6 +4,8 @@ laranja: #ffb833 | laranja light: #ffdd9f | laranja dark: #e29300
 
 */
 
+/* CONTAINER PAÍS ESTÁ COM DISPLAY: NONE, REMOVER APÓS TRADUÇÃO*/
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
@@ -161,6 +163,7 @@ html, body {
 }
 
 .container-pais {
+  display: none;
   z-index: 15555;
   left: 12px;
   bottom: 12px;
@@ -451,3 +454,4 @@ html, body {
   animation-name: shiny;
   animation-duration: 2s;
 }
+
